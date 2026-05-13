@@ -184,8 +184,7 @@ async function sendMessage() {
 
     let aiReply = data.candidates[0].content.parts[0].text;
 
-    loadingDiv.innerHTML = aiReply.replace(/
-/g, "<br>");
+    loadingDiv.innerHTML = aiReply.replace(/\n/g, "<br>");
 
   }
   catch(error) {
